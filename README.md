@@ -23,3 +23,5 @@ reproducir el sonido del animal. Pudiendo el niño reproducir el sonido pulsando
 el botón verde.
 
 ![alt text][imagen3]
+
+Para la reproducción de audio se ha utilizado la librería MediaPlayer
