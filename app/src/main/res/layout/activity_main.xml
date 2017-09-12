@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridPrueba"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ugr.fajardo.puzzles.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="73dp">
+
+    <ImageView
+        android:id="@+id/imagePuzzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/fondogato"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imageC"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@mipmap/gatoa" />
+
+    <ImageView
+        android:id="@+id/imageC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="184dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageA"
+        app:layout_constraintTop_toBottomOf="@+id/imagePuzzle"
+        app:srcCompat="@mipmap/gatob" />
+
+    <ImageView
+        android:id="@+id/imageB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/gatoc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePuzzle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.324" />
+
+    <ImageView
+        android:id="@+id/imageD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintLeft_toRightOf="@+id/imageB"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@mipmap/gatod" />
+
+    <TextView
+        android:id="@+id/textMuestra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
